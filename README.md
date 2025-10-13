@@ -65,7 +65,12 @@ PMA_HOST=prestashop-mysql
 PS_LANGUAGE=es
 PS_COUNTRY=es
 DB_NAME=prestashop
-
 ```
 # Instalacion 
 <img width="1375" height="295" alt="imagen" src="https://github.com/user-attachments/assets/40dcf4b0-47c2-4a02-a833-f94a260d7656" />
+Al poner mi ip con el puerto en especifico ``127.0.0.1:8080`` aparece esta pagina
+Que por lo que se debe ser la pagina de prestashop una vez instalado con la instalacion automatica, cosa que se porque la ip que aparece en la barra de busqueda es la del contenedor
+<img width="2730" height="1641" alt="imagen" src="https://github.com/user-attachments/assets/34c87854-0a0b-43e5-930a-0a4e22d49da6" />
+Accedo al contenedor de nombre ``prestashop`` y compruebo
+<img width="1416" height="820" alt="imagen" src="https://github.com/user-attachments/assets/73ddea15-1b3e-44a2-bf85-e49388ffa048" />
+
