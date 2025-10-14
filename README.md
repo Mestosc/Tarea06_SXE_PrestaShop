@@ -30,6 +30,8 @@ services:
       DB_USER: ${DB_USER}
       DB_PASSWD: ${DB_PASSWD}
       PS_INSTALL_AUTO: ${PS_INSTALL_AUTO}
+      PS_FOLDER_ADMIN: admin4577
+      PS_FOLDER_INSTALL: install4577
     networks:
       - prestashop_network
     volumes:
@@ -51,7 +53,6 @@ networks:
 volumes:
     dbdata:
     psdata:
-
 ```
 Este es el fichero docker compose, aqui añado diversas cosas como la instalacion, automatica el poner las cosas en variables de entorno y algunas cosas por el estilo
 ## Archivo .env
@@ -75,6 +76,9 @@ Que por lo que se debe ser la pagina de prestashop una vez instalado con la inst
 <img width="2730" height="1641" alt="imagen" src="https://github.com/user-attachments/assets/34c87854-0a0b-43e5-930a-0a4e22d49da6" />
 Accedo al contenedor de nombre ``prestashop`` y compruebo
 <img width="1416" height="820" alt="imagen" src="https://github.com/user-attachments/assets/73ddea15-1b3e-44a2-bf85-e49388ffa048" />
+
+Luego accedo al endpoint con el nombre puesto en la carpeta ``$PS_ADMIN_FOLDER`` que es ``admin4577``
+
 
 Ahora entro en php my admin y me aparece esta pantalla, donde podemos ver la tabla de prestashop
 <img width="2736" height="1652" alt="imagen" src="https://github.com/user-attachments/assets/878dbf86-7146-489b-a9b2-2d0c36f32840" />
