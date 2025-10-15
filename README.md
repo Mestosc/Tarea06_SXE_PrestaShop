@@ -86,7 +86,7 @@ Accedo al contenedor de nombre ``prestashop`` y compruebo
 
 <img width="1416" height="820" alt="imagen" src="https://github.com/user-attachments/assets/73ddea15-1b3e-44a2-bf85-e49388ffa048" />
 
-De esta manera se que la ip del contendor es `172.18.0.4` ya que luego en el panel administrativo aparece eso, ya que redirecciona a la IP del contenedor
+De esta manera se que la ip del contendor es `172.18.0.4` que es la misma que vi al acceder a la pagina de prestashop
 
 Cuando accedo al panel administrativo esto es lo que se ve
 
