@@ -76,8 +76,10 @@ PS_FOLDER_INSTALL=install4577
 ```
 # Instalacion 
 <img width="1375" height="295" alt="imagen" src="https://github.com/user-attachments/assets/40dcf4b0-47c2-4a02-a833-f94a260d7656" />
-Al poner mi ip con el puerto en especifico ``127.0.0.1:8080`` aparece esta pagina
+
+Al poner mi ip con el puerto en especifico `127.0.0.1:8080` aparece esta pagina
 Que por lo que se debe ser la pagina de prestashop una vez instalado con la instalacion automatica, cosa que se porque la ip que aparece en la barra de busqueda es la del contenedor
+
 <img width="2730" height="1641" alt="imagen" src="https://github.com/user-attachments/assets/34c87854-0a0b-43e5-930a-0a4e22d49da6" />
 
 Accedo al contenedor de nombre ``prestashop`` y compruebo
@@ -86,7 +88,7 @@ Accedo al contenedor de nombre ``prestashop`` y compruebo
 
 De esta manera se que la ip del contendor es `172.18.0.4` ya que luego en el panel administrativo aparece eso, ya que redirecciona a la IP del contenedor
 
-Luego accedo al panel administrativo
+Cuando accedo al panel administrativo esto es lo que se ve
 
 <img width="2773" height="1801" alt="imagen" src="https://github.com/user-attachments/assets/23b72206-ddc5-412c-9eb7-23f438a5b801" />
 
