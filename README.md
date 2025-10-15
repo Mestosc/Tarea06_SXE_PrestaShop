@@ -77,9 +77,22 @@ ADMIN_PASSWD=admin123
 Al poner mi ip con el puerto en especifico ``127.0.0.1:8080`` aparece esta pagina
 Que por lo que se debe ser la pagina de prestashop una vez instalado con la instalacion automatica, cosa que se porque la ip que aparece en la barra de busqueda es la del contenedor
 <img width="2730" height="1641" alt="imagen" src="https://github.com/user-attachments/assets/34c87854-0a0b-43e5-930a-0a4e22d49da6" />
+
 Accedo al contenedor de nombre ``prestashop`` y compruebo
+
 <img width="1416" height="820" alt="imagen" src="https://github.com/user-attachments/assets/73ddea15-1b3e-44a2-bf85-e49388ffa048" />
-Luego accedo al panel administrativo 
+
+De esta manera se que la ip del contendor es `172.18.0.4` ya que luego en el panel administrativo aparece eso, ya que redirecciona a la IP del contenedor
+
+Luego accedo al panel administrativo
+
+<img width="2773" height="1801" alt="imagen" src="https://github.com/user-attachments/assets/23b72206-ddc5-412c-9eb7-23f438a5b801" />
+
+Meto mis credenciales
+
+<img width="2790" height="1801" alt="imagen" src="https://github.com/user-attachments/assets/a85eb01d-dcc7-47d7-9b7f-38cdd32e8c1c" />
+
+Y aparece esto: 
 
 <img width="2779" height="1801" alt="imagen" src="https://github.com/user-attachments/assets/76b2ab9c-8fba-4c93-b152-43416f69e8f4" />
 
