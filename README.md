@@ -67,7 +67,7 @@ volumes:
     psdata:
 
 ```
-Este es el fichero docker compose, aqui añado diversas cosas como la instalacion, automatica el poner las cosas en variables de entorno y algunas cosas por el estilo
+Este es el fichero docker compose, aqui añado diversas cosas como la instalacion, automatica el poner las cosas en variables de entorno y algunas cosas por el estilo, tambien incluye el healthcheck para asegurar que la base de datos esta operativa y accesible
 ## Archivo .env
 ```sh
 MYSQL_ROOT_PASSWORD=admin
