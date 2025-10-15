@@ -32,6 +32,8 @@ services:
       PS_INSTALL_AUTO: ${PS_INSTALL_AUTO}
       PS_FOLDER_ADMIN: admin4577
       PS_FOLDER_INSTALL: install4577
+      ADMIN_MAIL: ${ADMIN_MAIL}
+      ADMIN_PASSWD: ${ADMIN_PASSWD}
     networks:
       - prestashop_network
     volumes:
@@ -64,10 +66,11 @@ DB_USER=root
 DB_PASSWD=admin
 PMA_ARBITRARY=1
 PS_INSTALL_AUTO=1
-PMA_HOST=prestashop-mysql
 PS_LANGUAGE=es
 PS_COUNTRY=es
 DB_NAME=prestashop
+ADMIN_MAIL=admin@prestashop.local
+ADMIN_PASSWD=admin123
 ```
 # Instalacion 
 <img width="1375" height="295" alt="imagen" src="https://github.com/user-attachments/assets/40dcf4b0-47c2-4a02-a833-f94a260d7656" />
@@ -76,11 +79,17 @@ Que por lo que se debe ser la pagina de prestashop una vez instalado con la inst
 <img width="2730" height="1641" alt="imagen" src="https://github.com/user-attachments/assets/34c87854-0a0b-43e5-930a-0a4e22d49da6" />
 Accedo al contenedor de nombre ``prestashop`` y compruebo
 <img width="1416" height="820" alt="imagen" src="https://github.com/user-attachments/assets/73ddea15-1b3e-44a2-bf85-e49388ffa048" />
+Luego accedo al panel administrativo 
+
+<img width="2779" height="1801" alt="imagen" src="https://github.com/user-attachments/assets/76b2ab9c-8fba-4c93-b152-43416f69e8f4" />
 
 Luego accedo al endpoint con el nombre puesto en la carpeta ``$PS_ADMIN_FOLDER`` que es ``admin4577``
 
 
 Ahora entro en php my admin y me aparece esta pantalla, donde podemos ver la tabla de prestashop
 <img width="2736" height="1652" alt="imagen" src="https://github.com/user-attachments/assets/878dbf86-7146-489b-a9b2-2d0c36f32840" />
+
+<img width="1301" height="1801" alt="imagen" src="https://github.com/user-attachments/assets/c377a282-dabd-4a78-a3ed-113c5f37be03" />
+
 
 
