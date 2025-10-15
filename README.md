@@ -10,6 +10,12 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 10s      # cada cuánto ejecutar el chequeo
+      timeout: 5s        # cuánto esperar por una respuesta
+      retries: 5         # cuántos fallos seguidos antes de marcar como unhealthy
+      start_period: 20s  # espera inicial antes de empezar los chequeos
     networks:
       - prestashop_network
     volumes:
@@ -19,7 +25,8 @@ services:
     image: prestashop/prestashop:latest
     restart: unless-stopped
     depends_on:
-      - mysql
+      mysql:
+       condition: service_healthy
     ports:
       - 8080:80
     environment:
@@ -43,6 +50,9 @@ services:
     restart: always
     ports:
       - 8090:80
+    depends_on:
+     mysql:
+      condition: service_healthy
     environment:
       PMA_HOST: ${DB_SERVER}
       PMA_ARBITRARY: ${PMA_ARBITRARY}
@@ -55,6 +65,7 @@ networks:
 volumes:
     dbdata:
     psdata:
+
 ```
 Este es el fichero docker compose, aqui añado diversas cosas como la instalacion, automatica el poner las cosas en variables de entorno y algunas cosas por el estilo
 ## Archivo .env
