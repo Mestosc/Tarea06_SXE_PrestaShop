@@ -108,5 +108,27 @@ Ahora entro en php my admin y me aparece esta pantalla, donde podemos ver la tab
 
 <img width="1301" height="1801" alt="imagen" src="https://github.com/user-attachments/assets/c377a282-dabd-4a78-a3ed-113c5f37be03" />
 
+Podemos comprobar la persistencia de los datos de la siguiente manera
+
+Añadi un producto llamado bolso, como se puede ver en la siguiente imagen
+
+<img width="2737" height="1650" alt="imagen" src="https://github.com/user-attachments/assets/83294c34-c044-4204-b240-72577e26d736" />
+
+Paramos el contenedor
+
+<img width="1389" height="473" alt="imagen" src="https://github.com/user-attachments/assets/71b1b898-1c45-464a-978a-30a60e674d6c" />
+
+Y ahora al volver a ejecutarlo
+
+<img width="1368" height="406" alt="imagen" src="https://github.com/user-attachments/assets/e96c5179-b322-4a81-a96e-8f7ffc1c6446" />
+
+Y al ver en la seccion de productos de la tienda
+
+<img width="2881" height="1801" alt="imagen" src="https://github.com/user-attachments/assets/adf9a36f-6136-4aba-95f9-6b8c666279d3" />
+
+Vemos que el producto personalizado sigue ahi asegurando persistencia
+
+
+
 
 
