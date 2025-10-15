@@ -30,8 +30,8 @@ services:
       DB_USER: ${DB_USER}
       DB_PASSWD: ${DB_PASSWD}
       PS_INSTALL_AUTO: ${PS_INSTALL_AUTO}
-      PS_FOLDER_ADMIN: admin4577
-      PS_FOLDER_INSTALL: install4577
+      PS_FOLDER_ADMIN: ${PS_FOLDER_ADMIN}
+      PS_FOLDER_INSTALL: ${PS_FOLDER_INSTALL}
       ADMIN_MAIL: ${ADMIN_MAIL}
       ADMIN_PASSWD: ${ADMIN_PASSWD}
     networks:
@@ -71,6 +71,8 @@ PS_COUNTRY=es
 DB_NAME=prestashop
 ADMIN_MAIL=admin@prestashop.local
 ADMIN_PASSWD=admin123
+PS_FOLDER_ADMIN=admin4577
+PS_FOLDER_INSTALL=install4577
 ```
 # Instalacion 
 <img width="1375" height="295" alt="imagen" src="https://github.com/user-attachments/assets/40dcf4b0-47c2-4a02-a833-f94a260d7656" />
