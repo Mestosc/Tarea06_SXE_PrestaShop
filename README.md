@@ -11,7 +11,7 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-p${MYSQL_ROOT_PASSWORD}"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s      # cada cuánto ejecutar el chequeo
       timeout: 5s        # cuánto esperar por una respuesta
       retries: 5         # cuántos fallos seguidos antes de marcar como unhealthy
