@@ -1,4 +1,4 @@
-# Tarea06_SXE_PrestaShop
+# Tarea 06 SXE PrestaShop
 
 # Docker-compose
 ```yaml
@@ -67,7 +67,7 @@ volumes:
     psdata:
 
 ```
-Este es el fichero docker compose, aqui añado diversas cosas como la instalacion, automatica el poner las cosas en variables de entorno y algunas cosas por el estilo, tambien incluye el healthcheck para asegurar que la base de datos esta operativa y accesible
+Este es el fichero Docker Compose, aquí añado diversas cosas como la instalación, automática, el poner las cosas en variables de entorno y algunas cosas por el estilo, también incluye el healthcheck para asegurar que la base de datos está operativa y accesible
 ## Archivo .env
 ```sh
 MYSQL_ROOT_PASSWORD=admin
@@ -85,11 +85,11 @@ ADMIN_PASSWD=admin123
 PS_FOLDER_ADMIN=admin4577
 PS_FOLDER_INSTALL=install4577
 ```
-# Instalacion 
+# Instalación 
 <img width="1375" height="295" alt="imagen" src="https://github.com/user-attachments/assets/40dcf4b0-47c2-4a02-a833-f94a260d7656" />
 
-Al poner mi ip con el puerto en especifico `127.0.0.1:8080` aparece esta pagina
-Que por lo que se debe ser la pagina de prestashop una vez instalado con la instalacion automatica, cosa que se porque la ip que aparece en la barra de busqueda es la del contenedor
+Al poner mi IP con el puerto en específico `127.0.0.1:8080` aparece esta página
+Que por lo que se debe ser la página de PrestaShop una vez instalado con la instalación automática, cosa que sé por qué la IP que aparece en la barra de búsqueda es la del contenedor
 
 <img width="2730" height="1641" alt="imagen" src="https://github.com/user-attachments/assets/34c87854-0a0b-43e5-930a-0a4e22d49da6" />
 
@@ -97,7 +97,7 @@ Accedo al contenedor de nombre ``prestashop`` y compruebo
 
 <img width="1416" height="820" alt="imagen" src="https://github.com/user-attachments/assets/73ddea15-1b3e-44a2-bf85-e49388ffa048" />
 
-De esta manera se que la ip del contendor es `172.18.0.4` que es la misma que vi al acceder a la pagina de prestashop
+De esta manera sé que la IP del contendor es `172.18.0.4` que es la misma que vi al acceder a la página de PrestaShop
 
 Cuando accedo al panel administrativo esto es lo que se ve
 
@@ -114,14 +114,14 @@ Y aparece esto:
 Luego accedo al endpoint con el nombre puesto en la carpeta ``$PS_ADMIN_FOLDER`` que es ``admin4577``
 
 
-Ahora entro en php my admin y me aparece esta pantalla, donde podemos ver la tabla de prestashop
+Ahora entro en PHP my admin y me aparece esta pantalla, donde podemos ver la tabla de PrestaShop
 <img width="2736" height="1652" alt="imagen" src="https://github.com/user-attachments/assets/878dbf86-7146-489b-a9b2-2d0c36f32840" />
 
 <img width="1301" height="1801" alt="imagen" src="https://github.com/user-attachments/assets/c377a282-dabd-4a78-a3ed-113c5f37be03" />
 
 Podemos comprobar la persistencia de los datos de la siguiente manera
 
-Añadi un producto llamado bolso, como se puede ver en la siguiente imagen
+Añadí un producto llamado bolso, como se puede ver en la siguiente imagen
 
 <img width="2737" height="1650" alt="imagen" src="https://github.com/user-attachments/assets/83294c34-c044-4204-b240-72577e26d736" />
 
@@ -133,13 +133,8 @@ Y ahora al volver a ejecutarlo
 
 <img width="1368" height="406" alt="imagen" src="https://github.com/user-attachments/assets/e96c5179-b322-4a81-a96e-8f7ffc1c6446" />
 
-Y al ver en la seccion de productos de la tienda
+Y al ver en la sección de productos de la tienda
 
 <img width="2881" height="1801" alt="imagen" src="https://github.com/user-attachments/assets/adf9a36f-6136-4aba-95f9-6b8c666279d3" />
 
-Vemos que el producto personalizado sigue ahi asegurando persistencia
-
-
-
-
-
+Vemos que el producto personalizado sigue ahí asegurando persistencia
