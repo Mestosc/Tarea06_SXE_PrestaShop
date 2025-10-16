@@ -69,6 +69,9 @@ volumes:
 ```
 Este es el fichero Docker Compose, aquí añado diversas cosas como la instalación, automática, el poner las cosas en variables de entorno y algunas cosas por el estilo, también incluye el healthcheck para asegurar que la base de datos está operativa y accesible
 ## Archivo .env
+
+Este es el fichero .env que contiene todos los valores de las variables de entorno necesarios para que funcione
+
 ```sh
 MYSQL_ROOT_PASSWORD=admin
 MYSQL_DATABASE=prestashop
